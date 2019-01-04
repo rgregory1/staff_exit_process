@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Google credentials
+client_secret.json
+credentials.py
+
 # Distribution / packaging
 .Python
 build/
