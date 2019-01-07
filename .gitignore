@@ -9,6 +9,7 @@ __pycache__/
 # Google credentials
 client_secret.json
 credentials.py
+sheets.googleapis.com-python.json
 
 # Distribution / packaging
 .Python
