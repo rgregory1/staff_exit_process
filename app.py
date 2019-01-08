@@ -5,6 +5,10 @@ import time
 import yagmail
 import credentials
 
+# get timestamp for log
+temp_timestamp = str(datetime.datetime.now())
+print(2 * "\n")
+print(temp_timestamp)
 
 is_leaving_staff = False
 
@@ -23,11 +27,6 @@ wks = sh.worksheet_by_title("Form Responses 1")
 # # ONLY FOR TESTING PURPOSES!!!! --------------------------------------------
 # wks.update_value('F2', '')
 
-
-# get timestamp for log
-temp_timestamp = str(datetime.datetime.now())
-print(2 * "\n")
-print(temp_timestamp)
 
 print("checking new staff form entries")
 # get all values from data entry form

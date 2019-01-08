@@ -11,6 +11,9 @@ client_secret.json
 credentials.py
 sheets.googleapis.com-python.json
 
+# mac tomfoolery
+.DS_Store
+
 # Distribution / packaging
 .Python
 build/
