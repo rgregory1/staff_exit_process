@@ -88,7 +88,7 @@ for staff in data:
             print("\n" + admin_todo)
 
         # begin office manager notifications
-        office_list = [17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+        office_list = [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]
         office_todo = ""
         for number in office_list:
             # print(this_staff_data[number])
@@ -102,7 +102,7 @@ for staff in data:
             print("\n" + office_todo)
 
         # begin Admin Assistant notifications
-        admin_ass_list = [29, 30, 31]
+        admin_ass_list = [30, 31, 32]
         admin_ass_todo = ""
         for number in admin_ass_list:
             # print(this_staff_data[number])
@@ -118,7 +118,7 @@ for staff in data:
             )
 
         # begin tech support notifications
-        tech_sup_list = [34, 35, 36, 37, 38, 39, 40]
+        tech_sup_list = [35, 36, 37, 38, 39, 40, 41]
         tech_sup_todo = ""
         for number in tech_sup_list:
             # print(this_staff_data[number])
@@ -134,7 +134,7 @@ for staff in data:
             )
 
         # begin tech int notifications
-        tech_int_list = [43, 44]
+        tech_int_list = [44, 45]
         tech_int_todo = ""
         for number in tech_int_list:
             # print(this_staff_data[number])

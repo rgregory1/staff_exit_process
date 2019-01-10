@@ -102,9 +102,9 @@ for staff in data:
         master_list.update_value(status_column, link_sheets + "C5")
         master_list.update_value(admin_column, link_sheets + "E8")
         master_list.update_value(office_column, link_sheets + "E16")
-        master_list.update_value(admin_ass_column, link_sheets + "E28")
-        master_list.update_value(tech_spec_column, link_sheets + "E33")
-        master_list.update_value(tech_int_column, link_sheets + "E42")
+        master_list.update_value(admin_ass_column, link_sheets + "E29")
+        master_list.update_value(tech_spec_column, link_sheets + "E34")
+        master_list.update_value(tech_int_column, link_sheets + "E43")
 
         # add x to 'sheet setup' column on form response sheed to mark staff as initiated
         sheet_setup_location = "F" + str(staff["id"])
