@@ -55,7 +55,8 @@ for staff in data:
         print("beginning process for exiting staff member" + staff["Staff Member"])
 
         # grab master copy of new staff sheet
-        orignial_exit_sheet = gc.open("Original Staff Exit Sheet")
+        # orignial_exit_sheet = gc.open("Original Staff Exit Sheet")
+        orignial_exit_sheet = gc.open_by_key('1-I5JSyVPFvYFE3QMOO3050F6c9jtLW4VXb_yhsfbRIw')
         original_worksheet = orignial_exit_sheet.worksheet_by_title("Original")
 
         # grab master sheet to add to
