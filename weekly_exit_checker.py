@@ -168,13 +168,13 @@ html = '<a href="https://docs.google.com/spreadsheets/d/1kgLv2h_TWmb9FzBmDAe6dJD
 # Admin emails
 if final_admin_todo != "":
     yag.send(
-        ["jjennett@fnwsu.org", "dstamour@fnwsu.org"],
+        ["Justina.Jennett@mvsdschools.org", "christopher.dodge@mvsdschools.org"],
         "Staff Exit Weekly Reminder",
         [contents, final_admin_todo, html],
     )
 else:
     yag.send(
-        ["jjennett@fnwsu.org", "dstamour@fnwsu.org"],
+        ["Justina.Jennett@mvsdschools.org", "christopher.dodge@mvsdschools.org"],
         "Staff Exit Weekly Reminder",
         [contents, contents2, html],
     )
@@ -183,26 +183,28 @@ print("admin emails sent")
 # office manager emails
 if final_office_todo != "":
     yag.send(
-        "clongway@fnwsu.org",
+        "Tanya.Racine@mvsdschools.org",
         "Staff Exit Weekly Reminder",
         [contents, final_office_todo, html],
     )
 else:
     yag.send(
-        "clongway@fnwsu.org", "Staff Exit Weekly Reminder", [contents, contents2, html]
+        "Tanya.Racine@mvsdschools.org",
+        "Staff Exit Weekly Reminder",
+        [contents, contents2, html],
     )
 print("office manager emails sent")
 
 # admin assistant emails
 if final_admin_ass_todo != "":
     yag.send(
-        ["dtessier@fnwsu.org", "mellis@fnwsu.org"],
+        ["dawn.tessier@mvsdschools.org", "Mary.Ellis@mvsdschools.org"],
         "Staff Exit Weekly Reminder",
         [contents, final_admin_ass_todo, html],
     )
 else:
     yag.send(
-        ["dtessier@fnwsu.org", "mellis@fnwsu.org"],
+        ["dawn.tessier@mvsdschools.org", "Mary.Ellis@mvsdschools.org"],
         "Staff Exit Weekly Reminder",
         [contents, contents2, html],
     )
@@ -211,25 +213,29 @@ print("admin assistant emails sent")
 # tech support emails
 if final_tech_sup_todo != "":
     yag.send(
-        "jlaroche@fnwsu.org",
+        "josh.laroche@mvsdschools.org",
         "Staff Exit Weekly Reminder",
         [contents, final_tech_sup_todo, html],
     )
 else:
     yag.send(
-        "jlaroche@fnwsu.org", "Staff Exit Weekly Reminder", [contents, contents2, html]
+        "josh.laroche@mvsdschools.org",
+        "Staff Exit Weekly Reminder",
+        [contents, contents2, html],
     )
 print("tech support emails sent")
 
 # tech integration emails
 if final_tech_int_todo != "":
     yag.send(
-        "rgregory@fnwsu.org",
+        "josh.laroche@mvsdschools.org",
         "Staff Exit Weekly Reminder",
         [contents, final_tech_int_todo, html],
     )
 else:
     yag.send(
-        "rgregory@fnwsu.org", "Staff Exit Weekly Reminder", [contents, contents2, html]
+        "josh.laroche@mvsdschools.org",
+        "Staff Exit Weekly Reminder",
+        [contents, contents2, html],
     )
 print("tech int emails sent")

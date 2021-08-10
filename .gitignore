@@ -8,6 +8,7 @@ __pycache__/
 
 # Google credentials
 client_secret.json
+client_secret-backup.json
 credentials.py
 sheets.googleapis.com-python.json
 

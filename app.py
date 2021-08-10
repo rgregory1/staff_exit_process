@@ -21,7 +21,8 @@ yag = yagmail.SMTP(gmail_user, gmail_password)
 gc = pygsheets.authorize()
 
 # open form responses
-sh = gc.open("Staff Exit Form Entry (Responses)")
+sh = gc.open_by_key("1qx5s0Nbea3nYklsyoofPXV03vrBCBjlvU5Z7bDFI5FU")
+# sh = gc.open("Staff Exit Form Entry (Responses)")
 wks = sh.worksheet_by_title("Form Responses 1")
 
 # # ONLY FOR TESTING PURPOSES!!!! --------------------------------------------
@@ -56,7 +57,9 @@ for staff in data:
 
         # grab master copy of new staff sheet
         # orignial_exit_sheet = gc.open("Original Staff Exit Sheet")
-        orignial_exit_sheet = gc.open_by_key('1-I5JSyVPFvYFE3QMOO3050F6c9jtLW4VXb_yhsfbRIw')
+        orignial_exit_sheet = gc.open_by_key(
+            "1-I5JSyVPFvYFE3QMOO3050F6c9jtLW4VXb_yhsfbRIw"
+        )
         original_worksheet = orignial_exit_sheet.worksheet_by_title("Original")
 
         # grab master sheet to add to
@@ -119,13 +122,12 @@ for staff in data:
         html = '<a href="https://docs.google.com/spreadsheets/d/1kgLv2h_TWmb9FzBmDAe6dJDw5mkz-itbCrt69PdxO3c/edit#gid=0">Staff Exit Process spreadsheet</a>'
         yag.send(
             [
-                "rgregory@fnwsu.org",
-                "jlaroche@fnwsu.org",
-                "jjennett@fnwsu.org",
-                "dstamour@fnwsu.org",
-                "dtessier@fnwsu.org",
-                "mellis@fnwsu.org",
-                "clongway@fnwsu.org",
+                "christopher.dodge@mvsdschools.org",
+                "josh.laroche@mvsdschools.org",
+                "Justina.Jennett@mvsdschools.org",
+                "dawn.tessier@mvsdschools.org",
+                "Mary.Ellis@mvsdschools.org",
+                "Tanya.Racine@mvsdschools.org",
             ],
             "Notification of Employee Exiting",
             [contents, html],
